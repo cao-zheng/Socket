@@ -1,4 +1,4 @@
-package com.cz.nettyIO;
+package com.cz.nettyIO.netty3;
 
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.ChannelPipeline;

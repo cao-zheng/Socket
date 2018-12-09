@@ -1,4 +1,4 @@
-package com.cz.nettyIO;
+package com.cz.nettyIO.netty3;
 
 import org.jboss.netty.channel.*;
 
@@ -10,7 +10,7 @@ public class HelloHandler extends SimpleChannelHandler {
     public void messageReceived(ChannelHandlerContext ctx, MessageEvent e) throws Exception {
         System.out.println("执行了messageReceived");
         String string = (String) e.getMessage();//获取数据
-        System.out.println("s="+string);
+        System.out.println("服务端s="+string);
 
         //回写数据，写给客户端
         ctx.getChannel().write("hi");
